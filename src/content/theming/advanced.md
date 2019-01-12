@@ -198,6 +198,18 @@ While the previously mentioned variables are useful for changing the colors of a
 | `--ion-grid-column-padding-xl`           | Padding of the grid columns for xl breakpoints     |
 
 
+### Other Variables
+You can set more variables which are used only, if you set them on your own. E.g. within the systems padding.scss values for padding are set like this:
+
+```css
+$padding: var(--ion-padding, 16px);
+```
+
+whereas `--ion-padding` is not set by Ionic, but the default value "16px" is taken. As soon as you define `--ion-padding` within the `root` selector your value is taken into account instead of the default one.
+
+Have a look at the folder `~@ionic/angular/css/core.css` to get an overview of which variables are setable.
+
+
 ## Known Limitations
 
 ### The Alpha Problem
