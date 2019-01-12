@@ -164,42 +164,6 @@ Create a custom background and text color theme for your app. Update the backgro
 <stepped-color-generator></stepped-color-generator>
 
 
-## Globals
-
-While the previously mentioned variables are useful for changing the colors of an application, often times there is a need for variables used in multiple components. The following variables are shared across components to change global padding settings and more.
-
-### Application Variables
-
-| Name                                     | Description                                                                                     |
-| -----------------------------------------| ------------------------------------------------------------------------------------------------|
-| `--ion-font-family`                      | Font family of the app                                                                          |
-| `--ion-statusbar-padding`                | Statusbar padding top of the app                                                                |
-| `--ion-safe-area-top`                    | Adjust the safe area inset top of the app                                                       |
-| `--ion-safe-area-right`                  | Adjust the safe area inset right of the app                                                     |
-| `--ion-safe-area-bottom`                 | Adjust the safe area inset bottom of the app                                                    |
-| `--ion-safe-area-left`                   | Adjust the safe area inset left of the app                                                      |
-| `--ion-margin`                           | Adjust the margin of the [Margin attributes](/docs/layout/css-utilities#element-margin)         |
-| `--ion-padding`                          | Adjust the padding of the [Padding attributes](/docs/layout/css-utilities#element-padding)      |
-
-### Grid Variables
-
-| Name                                     | Description                                        |
-| -----------------------------------------| ---------------------------------------------------|
-| `--ion-grid-columns`                     | Number of columns in the grid                      |
-| `--ion-grid-padding-xs`                  | Padding of the grid for xs breakpoints             |
-| `--ion-grid-padding-sm`                  | Padding of the grid for sm breakpoints             |
-| `--ion-grid-padding-md`                  | Padding of the grid for md breakpoints             |
-| `--ion-grid-padding-lg`                  | Padding of the grid for lg breakpoints             |
-| `--ion-grid-padding-xl`                  | Padding of the grid for xl breakpoints             |
-| `--ion-grid-column-padding-xs`           | Padding of the grid columns for xs breakpoints     |
-| `--ion-grid-column-padding-sm`           | Padding of the grid columns for sm breakpoints     |
-| `--ion-grid-column-padding-md`           | Padding of the grid columns for md breakpoints     |
-| `--ion-grid-column-padding-lg`           | Padding of the grid columns for lg breakpoints     |
-| `--ion-grid-column-padding-xl`           | Padding of the grid columns for xl breakpoints     |
-
-
-## Known Limitations
-
 ### The Alpha Problem
 
 There is not yet full <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Browser_compatibility" target="_blank">browser support</a> for alpha use of a hex color. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()_and_rgba()" target="_blank">rgba()</a> function only accepts a value in `R, G, B, A` (Red, Green, Blue, Alpha) format. The following code shows examples of correct and incorrect values passed to `rgba()`.
@@ -246,3 +210,36 @@ body {
   color: rgba(var(--ion-text-color-rgb), 0.25);
 }
 ```
+
+## Globals
+
+While the previously mentioned variables are useful for changing the colors of an application, often times there is a need for variables used in multiple components. The following variables are shared across components to change global padding settings and more.
+
+### Application Variables
+
+| Name                                     | Description                                                                                     |
+| -----------------------------------------| ------------------------------------------------------------------------------------------------|
+| `--ion-font-family`                      | Font family of the app                                                                          |
+| `--ion-statusbar-padding`                | Statusbar padding top of the app                                                                |
+| `--ion-safe-area-top`                    | Adjust the safe area inset top of the app                                                       |
+| `--ion-safe-area-right`                  | Adjust the safe area inset right of the app                                                     |
+| `--ion-safe-area-bottom`                 | Adjust the safe area inset bottom of the app                                                    |
+| `--ion-safe-area-left`                   | Adjust the safe area inset left of the app                                                      |
+| `--ion-margin`                           | Adjust the margin of the [Margin attributes](/docs/layout/css-utilities#element-margin)         |
+| `--ion-padding`                          | Adjust the padding of the [Padding attributes](/docs/layout/css-utilities#element-padding)      |
+
+### Grid Variables
+
+| Name                                     | Description                                        |
+| -----------------------------------------| ---------------------------------------------------|
+| `--ion-grid-columns`                     | Number of columns in the grid                      |
+| `--ion-grid-padding-xs`                  | Padding of the grid for xs breakpoints             |
+| `--ion-grid-padding-sm`                  | Padding of the grid for sm breakpoints             |
+| `--ion-grid-padding-md`                  | Padding of the grid for md breakpoints             |
+| `--ion-grid-padding-lg`                  | Padding of the grid for lg breakpoints             |
+| `--ion-grid-padding-xl`                  | Padding of the grid for xl breakpoints             |
+| `--ion-grid-column-padding-xs`           | Padding of the grid columns for xs breakpoints     |
+| `--ion-grid-column-padding-sm`           | Padding of the grid columns for sm breakpoints     |
+| `--ion-grid-column-padding-md`           | Padding of the grid columns for md breakpoints     |
+| `--ion-grid-column-padding-lg`           | Padding of the grid columns for lg breakpoints     |
+| `--ion-grid-column-padding-xl`           | Padding of the grid columns for xl breakpoints     |
